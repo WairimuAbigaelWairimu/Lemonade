@@ -42,18 +42,10 @@ function sendToWhatsapp(){
     });
   });
 
- /*function reset(){
+ function reset(){
     const formToReset = document.getElementById('my-form');
     formToReset.addEventListener('submit', (e) => {
        e.preventDefault();
        formToReset.reset();
     });
  }
-
-   let popup = document.getElementById("popup")     
-        function openPopup(){
-         popup.classList.add("open-Popup")
-        }
-        function closePopup(){
-          popup.classList.remove("open-Popup")
-        } */

@@ -1,5 +1,5 @@
 :root{
-    --main-color: #E7E154;
+    --main-color: hsl(58, 75%, 62%);
 }
 
 *{
@@ -28,7 +28,7 @@ a{
     background-size: cover;
     width: 100%;
     height: 100svh;
-    background-color: #E7E154 ;
+    background-color: var(--main-color) ;
 }
 .hero-cnt{
     display: flex;
@@ -43,7 +43,7 @@ a{
    text-align: center;
 }
 span{
-    color: #E7E154;
+    color: var(--main-color);
     font-weight: 700;
 }
 button{
@@ -57,11 +57,11 @@ button{
     margin-top: 16em;
 }
 button:hover{
-  background-color: #E7E154;
+  background-color: var(--main-color);
   transition: 0.3s;
 }
 marquee{
-    color: #E7E154;
+    color: var(--main-color);
     padding: 1em;
 }
 .gallery{
@@ -114,7 +114,7 @@ justify-content: space-between;
     background-size: cover;
     width: 100%;
     height: auto;
-    background-color: #E7E154;
+    background-color: var(--main-color);
     padding: 2.8em;
 } 
 #my-form {
@@ -180,7 +180,7 @@ option {
     right: 0;
 }
 .homebtn a:hover{
-    background-color: #E7E154;
+    background-color: var(--main-color);
   }
 
 /* POPUP */
@@ -251,8 +251,7 @@ option {
         margin-bottom: 5em;
     }
     .homebtn{
-        bottom: -22em;
-        margin: 1em;
+        display: none;
     }
   }
   @media screen and (min-width: 480px) {

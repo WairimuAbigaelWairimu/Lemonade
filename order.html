@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemonade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="oderpageHero">
+       <form action="https://script.google.com/macros/s/AKfycbzm29uRyOlPmVNW0RT0McjFrOTrea7nXRWfzWoMn9P4zUQJl7cQMVi5rRTVCnRR3H_w/exec" method="POST" id="my-form" enctype="multipart/form-data">
+            <h3>FILL THIS FORM TO MAKE AN ORDER</h3>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name"><br><br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" required><br><br>
+
+            <label for="delivery-option">Delivery Option</label>
+            <select name="delivery-option" id="delivery-option">
+                <option value="delivery-option">Select Delivery Option</option>
+                <option value="same-day delivery">Same-day Delivery</option>
+                <option value="in-store pickup">In-store Pickup</option>
+            </select>
+    
+            <label for="file">Current Location</label>
+            <select name="current-location" id="current-location">
+                <option value="select-location">Select Current Location</option>
+                <option value="Talai-stage">Talai-Stage</option>
+                <option value="Chebarus">Chebarus</option>
+                <option value="Kesses">Kesses</option>
+            </select>
+            
+            <input onclick="sendToWhatsapp(); reset()" type="submit" value="Send to WhatsApp" class="submitButton"> 
+        </form> 
+    </div>
+    <footer>
+        <div class="socials">
+            <h5>WE ARE SOCIAL</h5>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a></li>
+            </ul>
+        </div>
+        <p>All rights reserved &#169 Abbymaribe 2023</p>
+    </footer>
+    <section>
+        <div class="popup" id="popup">
+            <h2>Thank you!</h2>
+            <p>Your details have been submitted!
+            </p>
+            <button onclick="closePopup()" type="button">ok</button>
+          </div>
+    </section>
+</body>
+</html>

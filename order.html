@@ -12,7 +12,12 @@
 </head>
 <body>
     <div class="oderpageHero">
-       <form action="https://script.google.com/macros/s/AKfycbzm29uRyOlPmVNW0RT0McjFrOTrea7nXRWfzWoMn9P4zUQJl7cQMVi5rRTVCnRR3H_w/exec" method="POST" id="my-form" enctype="multipart/form-data">
+       <form 
+       action="https://script.google.com/macros/s/AKfycbw-QKLwOZ72QqpI0nOU-M4qWbib3H_0RFXdjRtPaZE0abp-Y9jyAILaD808nQiIX7TW/exec" method="POST"
+        id="my-form" 
+        enctype="multipart/form-data"
+        name="submit-to-google-sheet"
+        >
             <h3>FILL THIS FORM TO MAKE AN ORDER</h3>
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name"><br><br>
@@ -44,7 +49,7 @@
                 <option value="Kesses">Kesses</option>
             </select>
             
-            <input onclick="sendToWhatsapp(); reset()" type="submit" value="Send to WhatsApp" class="submitButton"> 
+            <input onclick="sendToWhatsapp()" type="submit" value="Send to WhatsApp" class="submitButton"> 
         </form> 
         <section>
             <button class="homebtn" type="button"><a href="index.html" target="_self">HOME</a></button>

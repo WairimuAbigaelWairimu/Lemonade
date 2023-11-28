@@ -22,7 +22,7 @@ a{
 }
 /* INDEX.HTML(MAIN PAGE) */
 .hero{
-    background-image: url(images/hero-image.jpg);
+    background-image: url(images/hero-image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
